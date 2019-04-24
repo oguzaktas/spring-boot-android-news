@@ -1,2 +1,2 @@
 # spring-boot-android-news
-Java Spring Boot and Android News Application with server-client architecture and MySQL database by using RESTful Web Services
+Java Spring Boot and Android News Application with server-client architecture by using RESTful Web Services and MySQL JDBC Driver
