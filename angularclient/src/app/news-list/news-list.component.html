@@ -1,0 +1,32 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Header</th>
+          <th scope="col">Content</th>
+          <th scope="col">Category</th>
+          <th scope="col">Publish Date</th>
+          <th scope="col">Likes</th>
+          <th scope="col">Dislikes</th>
+          <th scope="col">Views</th>
+          <th scope="col">Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let news of news">
+          <td>{{ news.id }}</td>
+          <td>{{ news.header }}</td>
+          <td>{{ news.content }}</td>
+          <td>{{ news.category }}</td>
+          <td>{{ news.publishDate }}</td>
+          <td>{{ news.likes }}</td>
+          <td>{{ news.dislikes }}</td>
+          <td>{{ news.views }}</td>
+          <td><a href="mailto:{{ news.imageURL }}">{{ news.imageURL }}</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
