@@ -1,11 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.oguz.springnews.entity;
 
 import java.io.Serializable;
+import java.sql.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,8 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- *
- * @author oguz
+ * Yazilim Laboratuvari II Proje 2
+ * @author Oguz Aktas & Mert Var
  */
 @Entity
 @Table(name = "news")
@@ -24,18 +21,18 @@ public class News implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
-    private int id;
-    @Column(name = "imageURL")
-    private String imageURL;
+    private Long id;
+    @Column(name = "imageurl")
+    private String imageurl;
     @Column(name = "header")
     private String header;
     @Column(name = "content")
     private String content;
     @Column(name = "category")
     private String category;
-    @Column(name = "publishDate")
+    @Column(name = "publish_date")
     //Date publishDate;
-    private String publishDate;
+    private Date publish_date;
     @Column(name = "likes")
     private int likes;
     @Column(name = "dislikes")
@@ -43,32 +40,32 @@ public class News implements Serializable {
     @Column(name = "views")
     private int views;
 
-    public News(int id, String imageURL, String header, String content, String category, String publishDate, int likes, int dislikes, int views) {
+    public News(Long id, String imageurl, String header, String content, String category, Date publish_date, int likes, int dislikes, int views) {
         this.id = id;
-        this.imageURL = imageURL;
+        this.imageurl = imageurl;
         this.header = header;
         this.content = content;
         this.category = category;
-        this.publishDate = publishDate;
+        this.publish_date = publish_date;
         this.likes = likes;
         this.dislikes = dislikes;
         this.views = views;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String getImageURL() {
-        return imageURL;
+    public String getImageurl() {
+        return imageurl;
     }
 
-    public void setImageURL(String imageURL) {
-        this.imageURL = imageURL;
+    public void setImageURL(String imageurl) {
+        this.imageurl = imageurl;
     }
 
     public String getHeader() {
@@ -95,12 +92,12 @@ public class News implements Serializable {
         this.category = category;
     }
 
-    public String getPublishDate() {
-        return publishDate;
+    public Date getPublishDate() {
+        return publish_date;
     }
 
-    public void setPublishDate(String publishDate) {
-        this.publishDate = publishDate;
+    public void setPublishDate(Date publish_date) {
+        this.publish_date = publish_date;
     }
 
     public int getLikes() {
@@ -129,7 +126,7 @@ public class News implements Serializable {
 
     @Override
     public String toString() {
-        return "News{" + "id=" + id + ", imageURL=" + imageURL + ", header=" + header + ", content=" + content + ", category=" + category + ", publishDate=" + publishDate + ", likes=" + likes + ", dislikes=" + dislikes + ", views=" + views + '}';
+        return "News{" + "id=" + id + ", imageURL=" + imageurl + ", header=" + header + ", content=" + content + ", category=" + category + ", publishDate=" + publish_date + ", likes=" + likes + ", dislikes=" + dislikes + ", views=" + views + '}';
     }
     
 }

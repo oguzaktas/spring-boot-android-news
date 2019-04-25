@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.oguz.springnews.controller;
 
 import com.oguz.springnews.entity.News;
@@ -16,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- *
- * @author oguz
+ * Yazilim Laboratuvari II Proje 2
+ * @author Oguz Aktas & Mert Var
  */
 @RestController
 @RequestMapping("/rest/news")
