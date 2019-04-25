@@ -10,6 +10,6 @@ import org.springframework.stereotype.Repository;
  * @author Oguz Aktas & Mert Var
  */
 @Repository
-public interface NewsRepository extends JpaRepository<News, Long> {
+public interface NewsRepository extends JpaRepository<News, Integer> {
     
 }

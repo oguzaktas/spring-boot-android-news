@@ -12,8 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HomeController {
     
-    @RequestMapping("home")
-    @ResponseBody
+    @RequestMapping("/home")
     public String home() {
         System.out.println("hello");
         return "home.xhtml";
