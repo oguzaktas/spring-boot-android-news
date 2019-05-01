@@ -21,6 +21,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.function.Function;
 
+import static android.view.View.GONE;
+
 /**
  * Yazilim Laboratuvari II Proje 2
  * @author Oguz Aktas & Mert Var
@@ -36,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         result = findViewById(R.id.result);
-        Button parse = findViewById(R.id.parse);
+        final Button parse = findViewById(R.id.parse);
 
         mQueue = Volley.newRequestQueue(this);
 
@@ -53,13 +55,14 @@ public class MainActivity extends AppCompatActivity {
         parse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                parse.setVisibility(View.GONE);
                 jsonParse();
             }
         });
     }
 
     private void jsonParse() {
-        String url = "http://192.168.56.1:8080/news";
+        String url = "http://192.168.0.63:8080/news";
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -75,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                         int likes = news.getInt("likes");
                         int dislikes = news.getInt("dislikes");
                         int views = news.getInt("views");
-                        result.append(header + ", " + content + ", " + category + ", " + imageurl + ", " + String.valueOf(likes) + ", " + String.valueOf(dislikes) + ", " + String.valueOf(views) + "\n\n");
+                        result.append("Haber basligi: " + header + "\nIcerik: " + content + "\nKategori: " + category + "\nImage: " + imageurl + "\nLike sayisi: " + String.valueOf(likes) + "\nDislike sayisi: " + String.valueOf(dislikes) + "\nGoruntulenme sayisi: " + String.valueOf(views) + "\n\n");
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();

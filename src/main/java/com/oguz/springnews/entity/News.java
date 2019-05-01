@@ -21,7 +21,7 @@ public class News implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
-    private int id;
+    private int Id;
     @Column(name = "imageurl")
     private String imageurl;
     @Column(name = "header")
@@ -31,7 +31,6 @@ public class News implements Serializable {
     @Column(name = "category")
     private String category;
     @Column(name = "publish_date")
-    //Date publishDate;
     private Date publish_date;
     @Column(name = "likes")
     private int likes;
@@ -40,8 +39,8 @@ public class News implements Serializable {
     @Column(name = "views")
     private int views;
 
-    public News(int id, String imageurl, String header, String content, String category, Date publish_date, int likes, int dislikes, int views) {
-        this.id = id;
+    public News(int Id, String imageurl, String header, String content, String category, Date publish_date, int likes, int dislikes, int views) {
+        this.Id = Id;
         this.imageurl = imageurl;
         this.header = header;
         this.content = content;
@@ -57,11 +56,11 @@ public class News implements Serializable {
     }
 
     public int getId() {
-        return id;
+        return Id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId(int Id) {
+        this.Id = Id;
     }
 
     public String getImageurl() {
@@ -130,7 +129,7 @@ public class News implements Serializable {
 
     @Override
     public String toString() {
-        return "News{" + "id=" + id + ", imageURL=" + imageurl + ", header=" + header + ", content=" + content + ", category=" + category + ", publishDate=" + publish_date + ", likes=" + likes + ", dislikes=" + dislikes + ", views=" + views + '}';
+        return "News{" + "id=" + Id + ", imageURL=" + imageurl + ", header=" + header + ", content=" + content + ", category=" + category + ", publishDate=" + publish_date + ", likes=" + likes + ", dislikes=" + dislikes + ", views=" + views + '}';
     }
     
 }
