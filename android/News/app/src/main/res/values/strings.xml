@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">News</string>
+    <string-array name="category">
+        <item>Tum haberler</item>
+        <item>Spor</item>
+        <item>Ekonomi</item>
+        <item>Egitim</item>
+        <item>Gundem</item>
+    </string-array>
 </resources>
