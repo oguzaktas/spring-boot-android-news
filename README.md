@@ -1,15 +1,15 @@
 [![version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/oguzaktas/spring-boot-android-news) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/oguzaktas/spring-boot-android-news/blob/master/LICENSE) [![codacy](https://img.shields.io/badge/codacy-B-green.svg)](https://app.codacy.com/project/oguzaktas/spring-boot-android-news/dashboard?bid=12570207&token=4aEl4h18Cb3UU5K)
 
-# Android News and Spring Boot REST Web Service
+# Android News and Spring Boot REST Service
 
 Java Spring Boot RESTful web service and Android News application by using server-client architecture and MySQL database
 
 ## Features
 
-- Java RESTful web service application by using Spring Boot and Spring Framework
+- Java EE RESTful web service by using Spring Boot and Spring Framework
 - Android news application
 - Java form application for MySQL database management (**maintained by [Mert Var](https://github.com/mert-var)**)
-- TypeScript database management web application by using npm and Angular CLI (**maintained by [Oğuz Aktaş](https://github.com/oguzaktas)**)
+- TypeScript MySQL database management web application by using npm and Angular CLI (**maintained by [Oğuz Aktaş](https://github.com/oguzaktas)**)
 
 ## Tools and Technologies
 
