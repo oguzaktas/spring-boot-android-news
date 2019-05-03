@@ -30,10 +30,10 @@ Java Spring Boot RESTful web service and Android News application by using serve
 
 ## Libraries and Components
 
-- [Retrofit](http://square.github.io/retrofit/) for sending network requests to RESTful API
-- [Google Gson](https://github.com/google/gson) for parsing JSON data
-- [Glide](https://github.com/bumptech/glide) for loading and caching image files
-- [PrettyTime](https://github.com/ocpsoft/prettytime) for converting Java Date() objects 
+- [Retrofit](http://square.github.io/retrofit/) - for sending network requests to RESTful web service
+- [Google Gson](https://github.com/google/gson) - for parsing JSON data
+- [Glide](https://github.com/bumptech/glide) - for loading and caching image files
+- [PrettyTime](https://github.com/ocpsoft/prettytime) - for converting Java Date() objects 
 - [CardView](https://developer.android.com/reference/android/support/v7/widget/CardView)
 - [RecyclerView](https://developer.android.com/reference/android/support/v7/widget/RecyclerView)
 
