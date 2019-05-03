@@ -2,7 +2,7 @@
 
 # Android News and Spring Boot REST Web Service
 
-Java Spring Boot RESTful web service, Android News application with server-client architecture and MySQL database
+Java Spring Boot RESTful web service and Android News application by using server-client architecture and MySQL database
 
 ## Features
 
