@@ -4,6 +4,8 @@
 
 Java Spring Boot RESTful web service and Android News application by using server-client architecture and MySQL database
 
+![architecture](https://user-images.githubusercontent.com/29024000/57166052-9bd59800-6e01-11e9-8317-0c06557e52fa.png)
+
 ## Features
 
 - Java EE RESTful web service by using Spring Boot and Spring Framework
