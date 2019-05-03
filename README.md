@@ -29,6 +29,7 @@ Java Spring Boot RESTful web service and Android News application by using serve
 - [NetBeans IDE 8.2 (with NP SpringBoot and Git Remote plugins)](https://netbeans.org/downloads/8.2/)
 - [IntelliJ IDEA 2019.1.1 Ultimate](https://www.jetbrains.com/idea/)
 - [Android Studio 3.4 for Linux](https://developer.android.com/studio)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Libraries and Components
 
